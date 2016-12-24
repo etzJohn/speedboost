@@ -1,0 +1,11 @@
+{
+  "name": "lvlup",
+  "version": "1.0.0",
+  "description": "JS dev environment starter kit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Holman",
+  "license": "ISC"
+}
