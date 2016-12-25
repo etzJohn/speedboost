@@ -1,8 +1,11 @@
-speedboost new JS projects for you and your team
+# speedboost ⚡️
 
-bundling			✅
-linting 			✅
-transpiling		✅
-testing				✅
+**speedboost** handles key decisions for new JS projects for you and your team
 
-#### note: for **.editorconfig** to work with your editor of choice, you may need to install a plugin, refer to http://editorconfig.org/ for a list
+* bundling			✅
+* linting 			✅
+* transpiling		✅
+* testing				✅
+
+#### note:
+* for `.editorconfig` to work with your editor of choice, you may need to install a plugin. Refer to http://editorconfig.org/ for a list
