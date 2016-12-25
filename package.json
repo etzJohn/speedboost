@@ -1,10 +1,17 @@
 {
-  "name": "lvlup",
+  "name": "speedboost",
   "version": "1.0.0",
   "description": "JS dev environment starter kit",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+		"prestart": "babel-node build/scripts/startMsg.js",
+    "start": "npm-run-all --parallel security-check open:src lint:watch",
+		"open:src": "babel-node build/scripts/server.js",
+		"lint": "esw webpack.config.* src build scripts --color",
+		"lint:watch": "npm run lint -- --watch",
+		"security-check": "nsp check",
+		"localtunnel": "lt --port 3000",
+		"share": "npm-run-all --parallel open:src localtunnel"
   },
   "author": "John Holman",
   "license": "MIT",
