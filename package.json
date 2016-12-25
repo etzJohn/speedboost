@@ -1,12 +1,12 @@
 {
-  "name": "lvlup",
+  "name": "speedboost",
   "version": "1.0.0",
   "description": "JS dev environment starter kit",
   "main": "index.js",
   "scripts": {
-		"prestart": "node build/scripts/startMsg.js",
+		"prestart": "babel-node build/scripts/startMsg.js",
     "start": "npm-run-all --parallel security-check open:src",
-		"open:src": "node build/scripts/server.js",
+		"open:src": "babel-node build/scripts/server.js",
 		"security-check": "nsp check",
 		"localtunnel": "lt --port 3000",
 		"share": "npm-run-all --parallel open:src localtunnel"
